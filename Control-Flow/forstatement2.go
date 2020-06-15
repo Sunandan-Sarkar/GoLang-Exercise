@@ -5,12 +5,11 @@ import (
 )
 
 func main() {
-
-	//for x:=1; x<10;x++ {
-	//fmt.Println(x)
-	//OR
 	x := 1
-	for x < 10 {
+	for {
+		if x > 9 {
+			break
+		}
 		fmt.Println(x)
 		x++
 	}
