@@ -19,4 +19,3 @@ func main() {
 func foo() {
 	fmt.Println(z)
 }
-

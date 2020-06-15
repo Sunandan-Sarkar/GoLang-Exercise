@@ -5,10 +5,10 @@ import (
 )
 
 const (
-	_=iota
-	kb = 1<<(iota*10)
-	mb = 1<<(iota*10)
-	gb = 1<<(iota*10)
+	_  = iota
+	kb = 1 << (iota * 10)
+	mb = 1 << (iota * 10)
+	gb = 1 << (iota * 10)
 )
 
 func main() {
