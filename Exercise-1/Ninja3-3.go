@@ -14,7 +14,7 @@ func main() {
 		x++
 		//bd := 1985
 		//for bd <= 2017 {
-			//fmt.Println(bd)
-			//bd++
+		//fmt.Println(bd)
+		//bd++
 	}
 }
