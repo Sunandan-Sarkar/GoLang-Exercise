@@ -11,7 +11,7 @@ func main() {
 	fmt.Println(x)
 
 	y := []string{"Honey", "Penny", "Money", "Funny"}
-	x = append(x, y...)//x = append(x, 4, 5, 6)
+	x = append(x, y...) //x = append(x, 4, 5, 6)
 	fmt.Println(x)
 	for i, v := range x {
 		fmt.Println(i, v)
