@@ -12,11 +12,12 @@ func main() {
 	fmt.Println(x[1:])
 	fmt.Println(x[:5])
 	fmt.Println(x[3:4])
-
+	fmt.Println("Here is for loop")
 	for i, v := range x {
 		fmt.Println(i, v)
 		//Alternative method
 	}
+	fmt.Println("The below one is Alternative method")
 	for i := 0; i <= 5; i++ {
 		fmt.Println(i, x[i])
 	}
