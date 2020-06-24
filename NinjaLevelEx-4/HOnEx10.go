@@ -13,9 +13,9 @@ func main() {
 
 	fmt.Println(m)
 
-	m["sun_dr"] = []string{`sunandan`, `Limbaroyati`, `sundan`}
+	m[`sun_dr`] = []string{`sunandan`, `Limbaroyati`, `sundan`}
 	fmt.Println(m)
-	delete(m, "no_dr")
+	delete(m, `no_dr`)
 	fmt.Println(m)
 
 	for i, j := range m {

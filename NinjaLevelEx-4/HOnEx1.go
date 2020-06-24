@@ -27,9 +27,10 @@ func main() {
 	fmt.Printf("%T\n", x)
 	fmt.Println("Hello, Sunandan")
 
+	//Alternative method
 	//x := [5]int{11, 22, 33, 44, 55}
 	//	fmt.Println(x)
-	//Alternative method
+
 	//	for i, v := range x {
 	//		fmt.Println(i, v)
 	//	}
