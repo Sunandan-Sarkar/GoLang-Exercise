@@ -15,4 +15,3 @@ func main() {
 		fmt.Println(i, x[i])
 	}
 }
-
