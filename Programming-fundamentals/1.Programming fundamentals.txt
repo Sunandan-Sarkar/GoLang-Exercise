@@ -1,0 +1,94 @@
+Programming fundamentals
+---------------------------------------
+Bool type
+A bool is a binary TYPE having two possible values of either “true” and “false.”
+When you use an equality comparison operator, this is an expression which will evaluate to a boolean value
+==
+<=
+>=
+!=
+<
+>
+
+-----------------------
+How computers work
+computers run on electricity
+electricity has two discrete states: ON and OFF
+we can create coding schemes for “on” or “off” states
+files: presentation
+------------------
+Numeric types
+integers
+numbers without decimals
+aka, whole number
+
+
+int & uint
+“implementation-specific sizes”
+all numeric types are distinct except 
+byte which is an alias for uint8
+rune which is an alias for int32 
+types are unique
+“this is static programming language
+“Conversions are required when different numeric types are mixed in an expression or assignment.
+ For instance, int32 and int are not the same type even though they may have the same size on a particular architecture” (source)
+rule of thumb: just use int
+floating point
+numbers with decimals
+aka, real numbers
+rule of thumb: just use float64 
+nice reading - Caleb Doxsey’s book
+-------------------
+int8
+----
+----
+runtime package
+GOOS
+GOARCH
+https://play.golang.org/p/1vp5DImIMM 
+---------------
+String type
+golang blog post on strings
+“A string value is a (possibly empty) sequence of bytes. Strings are immutable: once created, it is impossible to change the contents of a string.”
+Rob Pike’s blog post on string
+code:
+nice examples - lecture prep: 
+---------------
+Numeral systems
+As humans, we have many different systems for expressing the quantities of something. Using the decimal numeral system, 
+we might say we have 7 oranges; or 14 carrots; or 42 dollars. Other numeral systems which are used in programming 
+include the binary numeral system and the hexadecimal numeral system.
+------------------
+Constants
+a simple, unchanging value
+Only exist at compile time. 
+there are TYPED and UNTYPED constants
+const hello = "Hello, World"
+const typedHello string = "Hello, World"
+UNTYPED constant
+ a constant value that does not yet have a fixed type
+“constant of a kind”
+not yet forced to obey the strict rules that prevent combining differently typed values
+An untyped constant can be implicitly converted by the compiler. 
+It is this notion of an untyped constant that makes it possible for us to use constants in Go with great freedom.
+This is useful, for instance
+what is the type of 42?
+int?
+uint?
+float64?
+if we didn’t have UNTYPED constants (constants of a kind), then we would have to do conversion on every literal value we used
+and that would suck
+code used in video
+---------
+lecture prep
+-----------------
+Iota
+Within a constant declaration, the predeclared identifier iota represents successive untyped integer constants.
+ It is reset to 0 whenever the reserved word const appears in the source. It can be used to construct a set of related constants:
+------------------
+Bit shifting
+Bit shifting is when you shift binary digits to the left or right. We can use bit shifting, along with iota, to build some creative constants.
+nice article
+https://twitter.com/Todd_McLeod/status/885180854141558785 
+this is instructive, shows all bits shifting:
+

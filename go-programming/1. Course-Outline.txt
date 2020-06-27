@@ -1,0 +1,146 @@
+Variables, values, & type
+-------------------------------
+Playground
+share
+import
+format
+run
+https://forum.golangbridge.org/ 
+“idiomatic go”
+idioms are patterns of speech
+when someone writes “idiomatic Go” they are writing Go code in the way Go code community writes code
+------------------------
+Hello world
+basic program structure: 
+package main
+func main
+entry point to your program
+when your code exits func main, your program is over
+----------------------------------
+Introduction to packages
+variadic parameters
+the “...<some type>” is how we signify a variadic parameter
+the type “interface{}” is the empty interface
+every value is also of type “interface{}”
+so the parameter “...interface{}” means “give me as many arguments of any type as you’d like 
+throwing away returns
+use the “_” underscore character to throw away returns
+you can’t have unused variables in your code
+this is code pollution
+the compiler doesn’t allow it
+we use this notation in Go
+package.Identifier
+ex: fmt.Println()
+we would read that: “from package fmt I am using the Println func”
+an identifier is the name of the variable, constant, func
+packages
+code that is already written which you can use
+imports
+------------------
+Short declaration operator
+terminology
+keywords
+these are words that a reserved for use by the Go programming language
+they are sometimes called “reserved words”
+you can’t use a keyword for anything other than its purpose
+operator 
+in “2 + 2” the “+” is the OPERATOR
+an operator is a character that represents an action, as for example “+” is an arithmetic OPERATOR that represents addition
+operand
+in “2 + 2” the “2”s are OPERANDS
+statement
+In programming a statement is the smallest standalone element of a program that expresses some action to be carried out. 
+It is an instruction that commands the computer to perform a specified action. A program is formed by a sequence of one or more statements.
+expression
+in programming an expression is a combination of one or more explicit values, constants, variables, operators, 
+and functions that the programming language interprets and computes to produce another value.
+ For example, 2+3 is an expression which evaluates to 5.
+golang mascot
+https://github.com/golang/go/tree/master/doc/gopher
+Renne French
+https://github.com/ashleymcnamara/gophers 
+https://github.com/egonelbre/gophers 
+----------------------------------------------------
+The var keyword
+parens
+( )
+curly braces
+{ }
+where var can be used
+any place within the package
+scope
+where a variable exists and is accessible
+best practice: keep scope as “narrow” as possible
+-----------------------
+Exploring type
+DECLARE a VARIABLE is of a certain TYPE it can only hold VALUES of that TYPE
+“Go suffers no fools.”
+like “dead men tell no tales”
+var z int = 21
+package scope
+primitive data types
+In computer science, primitive data type is either of the following: 
+a basic type is a data type provided by a programming language as a basic building block.
+ Most languages allow more complicated composite types to be constructed starting from basic types. 
+a built-in type is a data type for which the programming language provides built-in support. 
+In most programming languages, all basic data types are built-in. 
+In addition, many languages also provide a set of composite data types. 
+Opinions vary as to whether a built-in type that is not basic should be considered "primitive".
+https://en.wikipedia.org/wiki/Primitive_data_type 
+composite data types
+
+In computer science, a composite data type or compound data type is any data type which can be constructed in a program using the programming language's primitive data types and other composite types.
+ It is sometimes called a structure or aggregate data type, although the latter term may also refer to arrays, lists, etc. The act of constructing a composite type is known as composition
+-----------------------------------
+Zero value
+understanding zero value
+false for booleans
+0 for integers
+0.0 for floats
+"" for strings
+nil for 
+pointers
+functions
+interfaces
+slices
+channels
+maps
+use short declaration operator as much as possible
+use var for
+zero value
+package scope
+----------------------
+The fmt package
+basic code setup
+using var
+using zero value
+using short declaration operator
+-----------------------
+%v
+-------------------------------
+escaped characters like \n or \t
+https://golang.org/ref/spec#Rune_literals 
+format printing
+------------------------
+we look at the difference between these funcs in the “fmt” package
+group #1 - general printing to standard out
+func Print(a ...interface{}) (n int, err error)
+func Printf(format string, a ...interface{}) (n int, err error)
+func Println(a ...interface{}) (n int, err error)t
+group #2 = printing to a string which you can assign to a variable
+func Sprint(a ...interface{}) string
+func Sprintf(format string, a ...interface{}) string
+func Sprintln(a ...interface{}) string
+group #3 - printing to a file or a web server’s response
+func Fprint(w io.Writer, a ...interface{}) (n int, err error)
+func Fprintf(w io.Writer, format string, a ...interface{}) (n int, err error)
+func Fprintln(w io.Writer, a ...interface{}) (n int, err error)
+--------------------------------------
+Creating your own type
+we can create our own type in Go
+------------------------------------
+Conversion, not casting
+Go has a language to talk about its language. Terms have been jettisoned because they come with baggage. Re-envision programming. 
+New words to talk about some concepts. We don’t talk about objects we talk about creating TYPES and VALUES of a certain TYPE. 
+We don’t talk about casting, we talk about CONVERSION and ASSERTION.
+
