@@ -1,0 +1,118 @@
+Control Flow
+-----------------
+Understanding control flow
+-------------------------------------
+Computers read programs in a certain way, just like we read books in a certain way. When we, as humans, read books, in Western culture, we read from front to back, left to right, top to bottom. 
+When computers read code in a program, they read it from top to bottom. This is known as reading it in SEQUENCE. This is also known as SEQUENTIAL control flow. 
+In addition to sequential control flow, there are two other statements which can affect how a computer reads code. A computer might hit a LOOP control flow. 
+If it hits one of these, it will loop over the code in a specified manner. Loop control flow is also known as ITERATIVE control flow. Finally, there is also CONDITIONAL control flow. 
+When the computer hits a CONDITION, like an “if statement” or a “switch statement” the computer will take some course of action depending upon some condition. 
+So, the three ways a computer reads code are: SEQUENTIAL, LOOP, CONDITIONAL
+--------------------------------------------
+sequence
+loop / iterative
+for loop
+init, cond, post
+bool (while-ish)
+infinite
+do-while-ish
+break
+continue
+nested
+conditionals
+switch / case / default statements
+no default fall-through
+creating fall-through
+multiple cases
+cases can be expressions
+evaluate to true, they run
+type
+if
+the not operator
+!
+initialization statement
+if / else
+if / else if / else
+if / else if / else if / … / else
+video: 038 
+Loop - init, condition, post
+for loop
+initialization, condition, post
+code:
+init,condition, post 
+for: 
+Loop - nested loops
+for loop
+nested loops
+Loop - for statement
+There are three ways you can do loops in Go - they all just use the “for” keyword:
+for init; condition; post { }
+for condition { }
+for { }
+Reading documentation for the “for” statement
+language spec
+effective go
+Loop - break & continue
+for loop
+break
+continue
+finding a remainder, also known as a modulus
+%
+Loop - printing ascii
+We can use format printing to print out the 
+decimal value with %d
+hex value with %#x
+unicode code point with %#U
+a tab with \t
+a new line with \n
+Conditional - if statement
+If Statements
+bool
+true
+false
+the not operator
+!
+
+initialization statement
+
+Conditional - if, else if, else
+if / else
+
+if / else if / else
+
+if / else if / else if / … / else
+ 
+
+Loop, conditional, modulus
+
+We iterate in life to improve. This is true for whatever we’re doing. We write the code with errors before we write the code without errors.
+ I had a teacher who called this the “perfection of imperfection.” My teacher would say to me, “You are perfect just the way you are, and there is room for improvement.”
+ The point being - the code we wrote in an earlier video to print out even numbers can be done better. In this video, we are going to do it better. We are going to write code that is more clear. 
+This will serve as a review of the concepts we have been learning: loops, conditional if statements, and the modulo operator.
+
+Conditional - switch statement
+Switch Statements
+switch / case / default statements
+no default fall-through
+creating fall-through
+multiple cases
+cases can be expressions
+evaluate to true, they run
+switch on boolean value: 
+no default fallthrough: 
+funky fallthrough: 
+default 
+switch on a value - which one does it match?
+switch on multiple matches for a case: 
+Conditional - switch statement documentation
+Being comfortable with reading documentation is important. By spending a little time together looking through Go’s documentation, 
+you will see how to read and interpret the documentation and become more comfortable with it.
+
+Conditional logic operators
+
+What do these expressions evaluate to:
+fmt.Println(true && true) 
+fmt.Println(true && false) 
+fmt.Println(true || true) 
+fmt.Println(true || false) 
+fmt.Println(!true)
