@@ -6,7 +6,7 @@ import (
 
 func main() {
 
-	var x [4]string//var x[5]int
+	var x [4]string //var x[5]int
 	fmt.Println(x)
 
 	x[0] = "May"
