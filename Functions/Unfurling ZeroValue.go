@@ -15,6 +15,6 @@ func sum(s ...int) int {
 		sum += v
 		fmt.Println("Index position number:", i, "Now adding ", v, "Total became: ", sum)
 	}
-	fmt.Println("The total amount is:",sum)
+	fmt.Println("The total amount is:", sum)
 	return sum
 }
