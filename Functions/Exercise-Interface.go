@@ -50,6 +50,13 @@ func main(){
 	soo(s1)
 	soo(s2)
 	soo(s3)
+	for i,j:=range s2.remarks{
+		fmt.Println("Position:",i,"\t value:",j)
+		}
+	for i,j:=range s3.remarks{
+		fmt.Println("\t Position:",i,"\t value:",j)
+	}
+
 }
 func(ss1 student)soo(){
 	fmt.Println(ss1.name,ss1.id,ss1.major,ss1.year)
@@ -58,6 +65,7 @@ func(ss1 student)soo(){
 type TLUStudent interface {
 	soo()
 }
+//switch s.(type) special type for remembering
 func soo(s TLUStudent){
 	switch s.(type) {
 	case student:
