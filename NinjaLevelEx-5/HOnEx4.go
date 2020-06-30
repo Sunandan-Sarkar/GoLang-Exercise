@@ -19,5 +19,5 @@ func main() {
 		id:       228287,
 	}
 	fmt.Println(s1)
-	fmt.Println(s1.sex,s1.id)
+	fmt.Println(s1.sex, s1.id)
 }

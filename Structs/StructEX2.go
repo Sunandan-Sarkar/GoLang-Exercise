@@ -47,4 +47,3 @@ func main() {
 	fmt.Println(sf1.disable, sf1.poor)
 
 }
-

@@ -13,7 +13,7 @@ type mobile struct {
 type SEmobile struct {
 	mobile
 	Sfunction bool
-	price []string
+	price     []string
 }
 
 func main() {
@@ -31,17 +31,17 @@ func main() {
 			rating:  6,
 		},
 		Sfunction: false,
-		price: []string{"400","USD","Retail Price"},
+		price:     []string{"400", "USD", "Retail Price"},
 	}
-	p3:=SEmobile{
-		mobile:    mobile{
+	p3 := SEmobile{
+		mobile: mobile{
 			model:   "iPhoneX",
 			brand:   "Apple",
 			release: 2018,
-			rating: 10,
+			rating:  10,
 		},
 		Sfunction: true,
-		price:     []string{"1500","EURO","Retail Price, First come first serve"},
+		price:     []string{"1500", "EURO", "Retail Price, First come first serve"},
 	}
 	fmt.Println(p1)
 	fmt.Println(p2)
@@ -50,16 +50,16 @@ func main() {
 	p1.boo()
 	p3.coo()
 }
-func (sp1 SEmobile) aoo()  {
+func (sp1 SEmobile) aoo() {
 	fmt.Println(sp1.model)
-	fmt.Println(sp1.brand,sp1.rating,sp1.release,sp1.Sfunction)
+	fmt.Println(sp1.brand, sp1.rating, sp1.release, sp1.Sfunction)
 	fmt.Println(sp1.price)
 }
-func (sp2 mobile) boo(){
+func (sp2 mobile) boo() {
 	fmt.Println(sp2.model)
-	fmt.Println(sp2.brand,sp2.release,sp2.rating)
+	fmt.Println(sp2.brand, sp2.release, sp2.rating)
 }
-func(sp3 SEmobile)coo(){
-	fmt.Println(sp3.brand,sp3.model,sp3.release,sp3.rating,sp3.Sfunction)
+func (sp3 SEmobile) coo() {
+	fmt.Println(sp3.brand, sp3.model, sp3.release, sp3.rating, sp3.Sfunction)
 	fmt.Println(sp3.price)
 }
