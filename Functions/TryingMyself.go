@@ -1,18 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	x := bar()
-	fmt.Printf("%T\n", x)
+	w := []string{"Strong", "Poor", "Rural", "Country's", "Farmer"}
+	fmt.Println(w)
 
-	// x()Run func
-	i := x()
-	fmt.Println(i)
-}
-
-func bar() func() int {
-	return func() int {
-		return 451
-	}
 }
