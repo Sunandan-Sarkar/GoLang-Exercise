@@ -8,7 +8,7 @@ func main() {
 	d := roo()
 	fmt.Println(d())
 	fmt.Println(d())
-	d1:=roo()
+	d1 := roo()
 	fmt.Println(d1())
 	fmt.Println(d1())
 	fmt.Println(d1())
