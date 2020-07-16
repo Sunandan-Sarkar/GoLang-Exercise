@@ -20,4 +20,3 @@ func main() {
 	// this is known as dereferencing
 	// the * is an operator in this case
 }
-

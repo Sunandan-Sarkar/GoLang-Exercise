@@ -26,4 +26,3 @@ func main() {
 	// info(c)
 	fmt.Println(c.area())
 }
-
