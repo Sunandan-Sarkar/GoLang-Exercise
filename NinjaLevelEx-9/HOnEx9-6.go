@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"runtime"
 )
-func main(){
-	fmt.Println("OS:", runtime.GOOS,"ARCH:",runtime.GOARCH)
-}
 
+func main() {
+	fmt.Println("OS:", runtime.GOOS, "ARCH:", runtime.GOARCH)
+}

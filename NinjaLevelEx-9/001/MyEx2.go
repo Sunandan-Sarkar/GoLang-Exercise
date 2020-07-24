@@ -1,11 +1,9 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 type person struct {
-	Saying string
+	First string
 }
 type human interface {
 	speak()
@@ -13,14 +11,13 @@ type human interface {
 
 func main() {
 	p1 := person{
-		Saying: "I speak Estonian"}
-
+		First: "Sarkar"}
 	p1.speak()
 	saySomething(&p1)
 }
 
 func (p *person) speak() {
-	fmt.Println(*p)
+	fmt.Println("I speak Estonian Language")
 }
 
 func saySomething(h human) {
