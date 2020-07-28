@@ -14,9 +14,9 @@ func main() {
 	var increment int64
 	ps := 100
 	np.Add(ps)
-	for i := 0; i <ps; i++ {
+	for i := 0; i < ps; i++ {
 		go func() {
-			atomic.AddInt64(&increment,1)
+			atomic.AddInt64(&increment, 1)
 			fmt.Println(atomic.LoadInt64(&increment))
 			np.Done()
 		}()
@@ -27,5 +27,3 @@ func main() {
 	fmt.Println("3rd GR:", runtime.NumGoroutine())
 	fmt.Println("End value:", increment)
 }
-
-

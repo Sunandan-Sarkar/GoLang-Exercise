@@ -55,7 +55,4 @@ func main() {
 	sort.Sort(ByLast(users))
 	fmt.Println(users)
 
-
 }
-
-

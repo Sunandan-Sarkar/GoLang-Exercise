@@ -26,11 +26,11 @@ func main() {
 		fmt.Println(err)
 	}
 	fmt.Println("All the data:", people)
-	for i,v:=range people{
-		fmt.Println("People #",i)
-		fmt.Println("\t",v.First,v.Last,v.Age)
-		for _,v2:=range v.Sayings{
-			fmt.Println("\t\t",v2)
+	for i, v := range people {
+		fmt.Println("People #", i)
+		fmt.Println("\t", v.First, v.Last, v.Age)
+		for _, v2 := range v.Sayings {
+			fmt.Println("\t\t", v2)
 		}
 	}
 

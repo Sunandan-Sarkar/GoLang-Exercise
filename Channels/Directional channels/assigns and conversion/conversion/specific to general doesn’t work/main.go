@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	c := make(chan int)
 	cr := make(<-chan int) // receive
 	cs := make(chan<- int) // send
@@ -12,11 +12,9 @@ func main(){
 	fmt.Printf("cr\t%T\n", cr)
 	fmt.Printf("cs\t%T\n", cs)
 
-	//general to specific converts
+	//specific to general doesn't convert
 	fmt.Println("---------------------")
-	fmt.Printf("C\t %T\n",(<-chan int)(c))
-	fmt.Printf("C\t %T\n",(chan<- int)(c))
-
+	fmt.Printf("Cr\t %T\n", (chan int)(cr))
+	fmt.Printf("Cs\t %T\n", (chan int)(cs))
 
 }
-

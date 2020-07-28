@@ -3,21 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	cp := make(chan int)
-	//Send
-	go foo(cp)
-
-	//Receive
-	 bar(cp)
+	cm:=make(chan int)
+	go func(){
+		for i:=0;i<10;i++{
+			cm<-i
+		}
+		close(cm)
+	}()
+	for v:= range cm{
+		fmt.Println(v)
+	}
 	fmt.Println("About to exit")
-}
-
-//Send
-func foo(cp chan<- int) {
-	cp <- 84
-}
-
-//Receive
-func bar(cp <-chan int) {
-	fmt.Println(<-cp)
 }

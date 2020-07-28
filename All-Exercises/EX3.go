@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 )
-func main(){
+
+func main() {
 	fmt.Print("Enter a number: ")
 	var input float64
 	fmt.Scanf("%f", &input)
-	output := (input - 32) * 5/9
+	output := (input - 32) * 5 / 9
 	fmt.Println(output)
 }
-

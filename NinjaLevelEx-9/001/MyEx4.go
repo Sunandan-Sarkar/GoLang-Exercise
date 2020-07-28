@@ -14,7 +14,7 @@ func main() {
 	ps := 100
 	np.Add(ps)
 	var mt sync.Mutex
-	for i := 0; i <ps; i++ {
+	for i := 0; i < ps; i++ {
 		go func() {
 			mt.Lock()
 			v := increment
@@ -32,4 +32,3 @@ func main() {
 	fmt.Println("3rd GR:", runtime.NumGoroutine())
 	fmt.Println("End value:", increment)
 }
-

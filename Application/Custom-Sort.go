@@ -8,6 +8,7 @@ type Person struct {
 	first string
 	Age   int
 }
+
 /*type ByAge []Person
 
 func (a ByAge) Len() int           { return len(a) }
@@ -29,4 +30,3 @@ func main() {
 
 	fmt.Println(people)
 }
-

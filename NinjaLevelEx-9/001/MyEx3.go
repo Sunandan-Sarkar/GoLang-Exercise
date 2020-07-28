@@ -13,7 +13,7 @@ func main() {
 	increment := 0
 	ps := 100
 	np.Add(ps)
-	for i := 0; i <ps; i++ {
+	for i := 0; i < ps; i++ {
 		go func() {
 			v := increment
 			runtime.Gosched()

@@ -58,7 +58,7 @@ func main() {
 	}
 	fmt.Println("------------------")
 	users := []us{u1, u2, u3}
-	for i,v:=range users {
+	for i, v := range users {
 		fmt.Println("People #", i)
 		fmt.Println("\t", v.First, v.Last, v.Age)
 		for _, v2 := range v.Sayings {
@@ -67,22 +67,21 @@ func main() {
 	}
 	fmt.Println("------------------")
 	sort.Sort(ByAge(users))
-	for i,v:=range users{
-		fmt.Println("\t People #",i)
-		fmt.Println("\t\t",v.First,v.Last,v.Age)
-		for _,v2:=range v.Sayings{
-			fmt.Println("\t",v2)
+	for i, v := range users {
+		fmt.Println("\t People #", i)
+		fmt.Println("\t\t", v.First, v.Last, v.Age)
+		for _, v2 := range v.Sayings {
+			fmt.Println("\t", v2)
 		}
 	}
 	fmt.Println("------------------")
 	sort.Sort(ByLast(users))
-	for i,v:=range users{
+	for i, v := range users {
 		fmt.Println("People #", i)
-		fmt.Println("\t",v.First,v.Last)
-		for _,v2:=range v.Sayings{
-			fmt.Println("\t",v2)
+		fmt.Println("\t", v.First, v.Last)
+		for _, v2 := range v.Sayings {
+			fmt.Println("\t", v2)
 		}
 	}
 
 }
-

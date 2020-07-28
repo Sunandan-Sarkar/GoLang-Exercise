@@ -57,4 +57,3 @@ func main() {
 	fmt.Println(users)
 
 }
-
