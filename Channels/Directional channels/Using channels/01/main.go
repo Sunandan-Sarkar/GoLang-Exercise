@@ -8,7 +8,7 @@ func main() {
 	go foo(cp)
 
 	//Receive
-	 bar(cp)
+	bar(cp)
 	fmt.Println("About to exit")
 }
 
