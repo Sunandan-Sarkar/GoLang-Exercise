@@ -9,4 +9,3 @@ func main() {
 	c <- 42
 	fmt.Println(<-c)
 }
-

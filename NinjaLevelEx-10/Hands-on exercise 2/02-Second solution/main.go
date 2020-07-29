@@ -15,4 +15,3 @@ func main() {
 	fmt.Printf("------\n")
 	fmt.Printf("cr\t%T\n", cr)
 }
-
