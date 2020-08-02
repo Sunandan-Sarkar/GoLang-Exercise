@@ -29,4 +29,6 @@ func main() {
 	people := []Person{p1, p2, p3, p4}
 
 	fmt.Println(people)
+
+	fmt.Println("About to exit")
 }
