@@ -18,5 +18,5 @@ func main() {
 
 		fmt.Println(x)
 	}
-	fmt.Println("done.")
+	fmt.Println("Program done!")
 }
