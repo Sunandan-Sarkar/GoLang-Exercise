@@ -16,7 +16,7 @@ func main() {
 	}("Going")
 
 	time.Sleep(time.Second)
-	fmt.Println("Done")
+	fmt.Println("Program Done")
 }
 func foo(f string) {
 	for i := 0; i < 3; i++ {
