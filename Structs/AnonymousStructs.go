@@ -15,4 +15,5 @@ func main() {
 		age:   33,
 	}
 	fmt.Println(p1)
+	fmt.Println("Done.")
 }
