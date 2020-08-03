@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/Sunandan-Sarkar/GoLang-Exercise/NinjaLevelEx-12/01/dog"
+	"github.com/Sunandan-Sarkar/GoLang-Exercise/NinjaLevelEx-12/010/dog"
 )
 
 type robin struct {
