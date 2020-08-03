@@ -12,4 +12,6 @@ func main() {
 	func(p []string) {
 		fmt.Println("My all animal", p)
 	}([]string{"cat", "dog", "deer"})
+
+	fmt.Println("---------------------------")
 }
