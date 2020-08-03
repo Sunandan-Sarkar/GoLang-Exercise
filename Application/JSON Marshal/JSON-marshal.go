@@ -29,4 +29,6 @@ func main() {
 		fmt.Println(err)
 	}
 	fmt.Println(string(bs))
+
+	fmt.Println("----------------")
 }
