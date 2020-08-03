@@ -7,13 +7,13 @@ import (
 	"strings"
 )
 
-func main(){
-	f,err:=os.Create("Name.txt")
-	if err != nil{
+func main() {
+	f, err := os.Create("Name.txt")
+	if err != nil {
 		fmt.Println(err)
 		return
 	}
 	defer f.Close()
-	r:=strings.NewReader("Dr. Strange")
-	io.Copy(f,r)
+	r := strings.NewReader("Dr. Strange")
+	io.Copy(f, r)
 }

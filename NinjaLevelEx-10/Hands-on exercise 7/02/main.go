@@ -12,8 +12,8 @@ func main() {
 		}()
 
 	}
-	for k:=0;k<100; k++ {
-		fmt.Println(k,<-c)
+	for k := 0; k < 100; k++ {
+		fmt.Println(k, <-c)
 	}
 
 	fmt.Println("Done!")

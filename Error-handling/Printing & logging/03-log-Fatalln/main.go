@@ -13,5 +13,6 @@ func main() {
 		log.Fatalln("Error happened: ", err)
 	}
 }
+
 //2020/08/02 16:47:37 Error happened:  open Name.txt: The system cannot find the file specified.
 //exit status 1

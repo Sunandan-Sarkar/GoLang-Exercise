@@ -14,4 +14,3 @@ func c() (i int) {
 	defer func() { i++ }()
 	return 1
 }
-
