@@ -20,6 +20,7 @@ func main() {
 	if err != nil {
 		log.Println(err)
 	}
+	fmt.Println("-----------")
 }
 
 func sqrt(f float64) (float64, error) {
