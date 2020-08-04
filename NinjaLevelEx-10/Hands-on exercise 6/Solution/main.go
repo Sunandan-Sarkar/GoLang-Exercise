@@ -17,5 +17,5 @@ func main() {
 		fmt.Println(v)
 	}
 
-	fmt.Println("About to exit")
+	fmt.Println("----------------")
 }
