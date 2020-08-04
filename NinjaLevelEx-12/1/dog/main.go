@@ -2,6 +2,6 @@
 package dog
 
 //Years are converted into dog years.
-func Years(n int) int{
-	return n*7
+func Years(n int) int {
+	return n * 7
 }

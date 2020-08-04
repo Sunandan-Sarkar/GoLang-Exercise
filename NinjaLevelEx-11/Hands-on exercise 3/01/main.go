@@ -9,7 +9,7 @@ type customErr struct {
 }
 
 func (ce customErr) Error() string {
-	return fmt.Sprintf("Here is my error %v\n",ce.sayings)
+	return fmt.Sprintf("Here is my error %v\n", ce.sayings)
 }
 
 func main() {
